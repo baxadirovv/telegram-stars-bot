@@ -1,0 +1,11 @@
+Nginx ishlatsangiz, sayt blokiga quyidagilarni qo'shing:
+
+    # Maxfiy fayllar
+    location ~* \.(log|sql|bak|lock)$ { deny all; }
+    location = /config.php            { deny all; }
+
+Boshqa hech qanday sozlash shart emas — bot oddiy PHP fayllardan iborat:
+    /index.php                 → webhook
+    /api/                      → hamkorlar API si
+    /api/docs.php              → hujjatlar
+    /AvtoPay/pay_config.php    → avto to'lov

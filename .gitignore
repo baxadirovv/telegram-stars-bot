@@ -1,0 +1,14 @@
+# Haqiqiy sirlar shu faylda — hech qachon commit qilinmasin
+config.php
+
+# Ishga tushganda avtomatik yaratiladigan fayllar
+bot.log
+send.lock
+
+# Test paytida hosil bo'ladigan narsalar
+tests/*.log
+
+# Tizim/IDE
+.DS_Store
+.idea/
+.vscode/

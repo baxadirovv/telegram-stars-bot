@@ -1,0 +1,8 @@
+# Maxfiy fayllarni tashqaridan yopamiz (Apache uchun)
+<FilesMatch "\.(log|sql|bak|lock)$">
+    Require all denied
+</FilesMatch>
+<Files "config.php">
+    Require all denied
+</Files>
+Options -Indexes
